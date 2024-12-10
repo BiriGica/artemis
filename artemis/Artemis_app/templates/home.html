@@ -13,6 +13,19 @@ Artemis
 <section>
     <h1>Artemis</h1>
     <h2>algum outro título</h2>
-    <p></p>
+    <p>Este é um espaço seguro para que mulheres que tenham sofrido algum ato de violência possam <br> contar suas histórias sem medo de se identificar. </p>
+    <p2>mais alguma coisa haha...</p2>
+</section>
+
+<section>
+    <form method="POST" action="{% url regitrarRelatos %}">
+        <label for="your_report"> Seu relato: </label>
+        <input id="your_report" type="text" name="your_report" value="{{ report }}">
+        <input type="submit" value="ENVIAR">
+    </form>
+</section>
+
+<section>
+    <footer>Para denunciar algum ato de violência doméstica, disque 180</footer>
 </section>
 {% endblock %}
